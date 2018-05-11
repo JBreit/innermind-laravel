@@ -1,5 +1,9 @@
           <nav id="sidebar" class="col-md-2 d-md-block bg-dark sidebar h-100" aria-expanded="false">
             <div class="sidebar-sticky">
+              <a class="navbar-brand mr-0 w-100" href="/">
+                <img src="img/innermind-logo.png" alt="Innermind Logo" />
+                {{ config('app.name', 'Laravel') }}
+              </a>
               <ul class="nav flex-column">
                 <li class="nav-item {{ Request::is('admin') ? 'active' : ''}} w-100">
                   <a class="nav-link" href="/admin/">
