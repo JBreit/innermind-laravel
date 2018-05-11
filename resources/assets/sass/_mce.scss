@@ -1,0 +1,39 @@
+.mce-panel {
+  border: none !important;
+}
+
+.mce-tinymce {
+  background-color: $input-bg;
+  background-clip: padding-box;
+  // border: none !important;
+  // -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  // -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.mce-edit-area {
+  border-left: 1px solid #ced4da !important;
+  border-right: 1px solid #ced4da !important;
+  border-bottom: 1px solid #ced4da !important;
+}
+
+.mce-btn {
+  border: none !important;
+}
+
+.mce-top-part::before {
+  border: 1px solid #ced4da !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.mce-statusbar>.mce-container-body {
+
+  border-left: 1px solid #ced4da !important;
+  border-right: 1px solid #ced4da !important;
+  border-bottom: 1px solid #ced4da !important;
+}

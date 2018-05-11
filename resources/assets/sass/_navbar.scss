@@ -1,0 +1,236 @@
+.navbar {
+  padding: 0 1rem;
+
+  > .container,
+  > .container-fluid {
+
+  }
+}
+
+.navbar-laravel {
+  background-color: $site-theme-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  @include hover-focus {
+
+  }
+}
+
+.navbar-nav {
+
+  .nav-link {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include hover-focus {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .dropdown-menu {
+
+  }
+}
+
+.navbar-text {
+
+}
+
+.navbar-collapse {
+
+}
+
+.navbar-toggler {
+  border: none;
+
+  @include hover-focus {
+    border: none;
+    outline: none;
+  }
+
+  &:not(:disabled):not(.disabled) {
+
+  }
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navbar-push-toggler,
+.navbar-toggler {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  width: 47px;
+  height: 47px;
+  &.right-toggler {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #fff;
+  }
+  .feather {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+        > .container,
+        > .container-fluid {
+
+        }
+      }
+
+      @include media-breakpoint-up($next) {
+        .navbar-nav {
+
+          .dropdown-menu {
+          }
+
+          .nav-link {
+            padding: 1rem 0.5rem;
+          }
+        }
+
+        // For nesting containers, have to redeclare for alignment purposes
+        > .container,
+        > .container-fluid {
+
+        }
+
+        .navbar-collapse {
+
+        }
+
+        .navbar-toggler {
+
+        }
+      }
+    }
+  }
+}
+
+.navbar-light {
+
+  .navbar-brand {
+
+    @include hover-focus {
+
+    }
+  }
+
+  .navbar-nav {
+
+    .nav-link {
+
+      @include hover-focus {
+
+      }
+
+      &.disabled {
+
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+
+    }
+  }
+
+  .navbar-toggler {
+
+  }
+
+  .navbar-toggler-icon {
+
+  }
+
+  .navbar-text {
+    a {
+
+      @include hover-focus {
+
+      }
+    }
+  }
+}
+
+.navbar-dark {
+
+  .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+
+    @include hover-focus {
+
+    }
+  }
+
+  .navbar-nav {
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.9);
+
+      @include hover-focus {
+
+      }
+
+      &.disabled {
+
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+
+    }
+  }
+
+  .navbar-toggler {
+
+  }
+
+  .navbar-toggler-icon {
+
+  }
+
+  .navbar-text {
+    a {
+
+      @include hover-focus {
+
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .navbar-nav {
+
+    .nav-link {
+      padding: 0.5rem 1rem;
+    }
+
+    .dropdown-menu {
+
+    }
+  }
+}

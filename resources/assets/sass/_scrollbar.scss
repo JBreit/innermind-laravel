@@ -1,0 +1,45 @@
+/**
+ * Scrollbar Theme Styles
+ */
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border: 0px none #6b6b6b;
+  border-radius: 0px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border: 0px none #fff;
+  border-radius: 0px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
+
+  &:active {
+    background: rgba(0, 0, 0, 0.03);
+  }
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

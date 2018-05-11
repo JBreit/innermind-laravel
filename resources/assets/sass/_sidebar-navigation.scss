@@ -1,0 +1,128 @@
+/*
+ * Sidebar Styles
+ */
+.sidebar {
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  opacity: 1;
+
+  /**
+   * Closed Navigation
+   */
+  &[aria-expanded=false] {
+    width: 48px;
+    -ms-transform: $sidebar-transform;
+    -o-transform: $sidebar-transform;
+    -moz-transform: $sidebar-transform;
+    -webkit-transform: $sidebar-transform;
+    transform: $sidebar-transform;
+    -o-transition: $sidebar-transition-collapsed;
+    -moz-transition: $sidebar-transition-collapsed;
+    -webkit-transition: $sidebar-transition-collapsed;
+    transition: $sidebar-transition-collapsed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /**
+   * Open Navigation
+   */
+  &[aria-expanded=true] {
+    width: 227px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    -ms-transform: $sidebar-transform;
+    -o-transform: $sidebar-transform;
+    -moz-transform: $sidebar-transform;
+    -webkit-transform: $sidebar-transform;
+    transform: $sidebar-transform;
+    -o-transition: $sidebar-transition-expanded;
+    -moz-transition: $sidebar-transition-expanded;
+    -webkit-transition: $sidebar-transition-expanded;
+    transition: $sidebar-transition-expanded;
+  }
+
+  .nav {
+    width: 227px;
+    margin: 7px 0;
+    float: left;
+
+    .nav-item {
+      position: relative;
+      display: block;
+      height: 36px;
+      padding: 6px 0;
+
+      &:hover {
+        background-color: #333;
+        padding: 6px 0;
+
+        & > .nav-link {
+          font-weight: 500;
+          color: #fff;
+
+          .feather {
+            color: inherit;
+          }
+        }
+      }
+
+      .nav-link {
+        width: 100%;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+        color: #999;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        -ms-transform: $sidebar-transform;
+        -o-transform: $sidebar-transform;
+        -moz-transform: $sidebar-transform;
+        -webkit-transform: $sidebar-transform;
+        transform: $sidebar-transform;
+        -o-transition: $sidebar-transition-expanded;
+        -moz-transition: $sidebar-transition-expanded;
+        -webkit-transition: $sidebar-transition-expanded;
+        transition: $sidebar-transition-expanded;
+        font-family: 'Strait', sans-serif;
+
+        .nav-text {
+          display: table-cell;
+          vertical-align: middle;
+          width: 190px;
+          font-family: 'Titillium Web', sans-serif;
+        }
+
+        .feather {
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          display: inline-block;
+          margin-left: 12px;
+          margin-right: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {}
+
+@media (min-width: 480px) and (max-width: 575px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

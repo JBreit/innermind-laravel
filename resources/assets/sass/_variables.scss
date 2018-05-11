@@ -1,0 +1,42 @@
+/**
+ * Primary Site Theme Color Variables
+ */
+//$site-theme-color: #29487d;
+$site-theme-color: #1D1D52;
+
+/**
+ * Body
+ */
+$body-bg: #fff;
+
+/**
+ * Typography Variables
+ */
+//$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+/**
+ * Border Variables
+ */
+$border-radius: 0;
+
+/**
+ * Card Variables
+ */
+$card-border-width: 0;
+$card-border-color: transparent;
+
+/**
+ * Dropdown Variables
+ */
+$dropdown-link-hover-color: #fff;
+$dropdown-link-hover-bg: rgba(255, 255, 255, 0.1);
+
+/**
+ * Sidebar Variables
+ */
+$sidebar-transform: translateZ(0) scale(1,1);
+$sidebar-transition-collapsed: width .2s linear;
+$sidebar-transition-expanded: all .14s linear;
