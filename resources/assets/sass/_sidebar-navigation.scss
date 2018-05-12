@@ -81,7 +81,7 @@
         border-spacing: 0;
         color: #999;
         font-weight: 500;
-        font-size: 14px;
+        font-size: $font-size-base;
         text-decoration: none;
         -ms-transform: $sidebar-transform;
         -o-transform: $sidebar-transform;
@@ -92,13 +92,12 @@
         -moz-transition: $sidebar-transition-expanded;
         -webkit-transition: $sidebar-transition-expanded;
         transition: $sidebar-transition-expanded;
-        font-family: 'Strait', sans-serif;
 
         .nav-text {
           display: table-cell;
           vertical-align: middle;
           width: 190px;
-          font-family: 'Titillium Web', sans-serif;
+          font-family: $font-family-sans-serif;
         }
 
         .feather {

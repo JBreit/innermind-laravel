@@ -4,7 +4,7 @@ namespace Innermind\User\Apis;
 
 use Innermind\Support\Http\Controller;
 use Innermind\User\Services\UserService;
-use Innermind\Support\Http\Request;
+use Illuminate\Http\Request;
 
 class UserApi extends Controller
 {

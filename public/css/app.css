@@ -10844,20 +10844,19 @@ h6 {
   border-spacing: 0;
   color: #999;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.9rem;
   text-decoration: none;
   -webkit-transform: translateZ(0) scale(1, 1);
   transform: translateZ(0) scale(1, 1);
   -webkit-transition: all 0.14s linear;
   transition: all 0.14s linear;
-  font-family: 'Strait', sans-serif;
 }
 
 .sidebar .nav .nav-item .nav-link .nav-text {
   display: table-cell;
   vertical-align: middle;
   width: 190px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar .nav .nav-item .nav-link .feather {

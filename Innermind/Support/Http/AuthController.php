@@ -42,7 +42,7 @@ class AuthController extends Controller
 
             return $this->sendResetResponse($response);
         }
-        
+
         return $this->sendResetFailedResponse($request, $response);
     }
 }
