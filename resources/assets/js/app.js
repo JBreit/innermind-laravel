@@ -25,7 +25,7 @@ const app = new Vue({
   const toggler = document.querySelector('[data-toggle="push"]');
   const target = toggler.dataset.target || toggler.attribute.href || '#sidebar';
   const direction = toggler.dataset.direction || 'right';
-  const body = toggler.dataset.canvas || document.getElementsByTagName('body')[0];
+  const body = toggler.dataset.canvas || document.getElementsByTagName('main')[0];
 
   body.classList.add('push-canvas');
 

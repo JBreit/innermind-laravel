@@ -1,5 +1,9 @@
     <nav class="navbar navbar-expand-md navbar-dark navbar-laravel sticky-top flex-md-nowrap p-0">
       <!-- <div class="container-fluid"> -->
+        <a class="navbar-brand mr-0" href="/">
+          <img src="img/innermind-logo.svg" alt="Innermind Logo" />
+          {{ config('app.name', 'Laravel') }}
+        </a>
         <button
           class="navbar-push-toggler"
           data-toggle="push"
