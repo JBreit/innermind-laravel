@@ -8,11 +8,7 @@
         @include('layouts.partials.sidebar')
       @endauth
 
-      @if (session('status'))
-        <div id="flash-message" class="alert alert-success flash-message" role="alert">
-          {{ session('status') }}
-        </div>
-      @endif
+      @include('layouts.partials.success')
 
       <main class="py-4">
         @yield('content')

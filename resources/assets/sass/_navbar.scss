@@ -10,13 +10,12 @@
 
 .navbar-laravel {
   background-color: $site-theme-color;
-  //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-brand {
   background-color: $site-theme-color;
   color: rgba(255, 255, 255, 0.9);
-  padding: 0.25rem 0.25rem 0.19rem 0.25rem;
+  padding: 0.25rem 0.5rem 0.19rem 0.25rem;
 
   @include hover-focus {
     color: rgba(255, 255, 255, 0.9);
@@ -24,14 +23,13 @@
 }
 
 .navbar-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 3rem;
+  // height: 3rem;
+
+  .nav-item {}
 
   .nav-link {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     @include hover-focus {
       background-color: rgba(255, 255, 255, 0.1);
@@ -45,6 +43,7 @@
 
   .dropdown-menu {
     top: 2.95rem;
+    margin: 0;
   }
 }
 
@@ -73,30 +72,31 @@
   color: #fff;
 }
 
-// .settings {
-//   height: 3rem;
-//   width: 3rem;
-// }
-
 .navbar-push-toggler,
 .navbar-toggler {
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
-  width: 47px;
-  height: 47px;
+  width: 3rem;
+  height: 3rem;
+
   &.right-toggler {
     position: fixed;
     top: 0;
     right: 0;
     color: #fff;
   }
+
   .feather {
     height: 1.5rem;
     width: 1.5rem;
   }
 
-  &:focus {
+  @include hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  @include hover-focus {
     outline: 0;
   }
 }
@@ -122,9 +122,8 @@
           }
 
           .nav-link {
-            //padding: 1rem 0.5rem;
-            //padding: 1rem 0.5rem 0.4rem 0.5rem
             padding: 0.75rem;
+            max-height: 3rem;
           }
         }
 
@@ -227,11 +226,11 @@
   }
 
   .navbar-toggler {
-
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .navbar-toggler-icon {
-
+    background-image: none;
   }
 
   .navbar-text {
@@ -247,12 +246,53 @@
 @media (min-width: 320px) {
   .navbar-nav {
 
+    .nav-item.dropdown {
+      background-color: #343a40;
+
+      .dropdown-menu {
+        background-color: inherit;
+        color: rgb(255, 255, 255);
+      }
+    }
+
     .nav-link {
+
       padding: 0.5rem 1rem;
     }
 
     .dropdown-menu {
 
+      &.show {
+
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+
+    .nav-item.dropdown {
+
+      .dropdown-menu {
+        background-color: inherit;
+        color: rgb(255, 255, 255);
+      }
+
+      .dropdown-toggle {
+        background-color: $site-theme-color;
+      }
+    }
+
+    .nav-link {
+
+    }
+
+    .dropdown-menu {
+
+      &.show {
+
+      }
     }
   }
 }

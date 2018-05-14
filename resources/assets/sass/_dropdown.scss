@@ -13,6 +13,7 @@
   margin: 0;
   border-radius: 0;
   border: none;
+  padding: 0;
 
   &[x-placement^="top"],
   &[x-placement^="right"],
@@ -66,6 +67,7 @@
 
 .dropdown-item {
   color: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 1.5rem;
 
   @include hover-focus {
     color: $dropdown-link-hover-color;
@@ -100,8 +102,7 @@
 
 @media (min-width: 320px) {
   .dropdown-menu {
-    background-color: $site-theme-color;
-    padding: 0;
+
 
     &[x-placement^="top"],
     &[x-placement^="right"],
@@ -112,7 +113,6 @@
   }
 
   .dropdown-item {
-    padding: 0.5rem 1rem;
 
     @include hover-focus {
 
@@ -120,8 +120,7 @@
 
     &.active,
     &:active {
-      background-color: #ddd;
-      color: #000;
+
     }
 
     &.disabled,
@@ -133,8 +132,7 @@
 
 @media (min-width: 768px) {
   .dropdown-menu {
-    background-color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
 
     &[x-placement^="top"],
     &[x-placement^="right"],
@@ -152,8 +150,7 @@
 
     &.active,
     &:active {
-      background-color: #ddd;
-      color: #000;
+
     }
 
     &.disabled,

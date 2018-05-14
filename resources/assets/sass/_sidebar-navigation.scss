@@ -17,7 +17,7 @@
    * Closed Navigation
    */
   &[aria-expanded=false] {
-    width: 48px;
+    width: 3rem;
     -ms-transform: $sidebar-transform;
     -o-transform: $sidebar-transform;
     -moz-transform: $sidebar-transform;
@@ -35,7 +35,7 @@
    * Open Navigation
    */
   &[aria-expanded=true] {
-    width: 227px;
+    width: 14.188rem;
     border-collapse: collapse;
     border-spacing: 0;
     -ms-transform: $sidebar-transform;
@@ -50,8 +50,8 @@
   }
 
   .nav {
-    width: 227px;
-    margin: 7px 0;
+    width: 14.188rem;
+    margin: 0;
     float: left;
 
     .nav-item {
@@ -101,14 +101,25 @@
         }
 
         .feather {
-          width: 24px;
-          height: 24px;
+          width: 1.5rem;
+          height: 1.5rem;
           text-align: center;
           display: inline-block;
           margin-left: 12px;
           margin-right: 12px;
           color: #999;
         }
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: #fff;
+
+      .feather {
+        color: inherit;
       }
     }
   }

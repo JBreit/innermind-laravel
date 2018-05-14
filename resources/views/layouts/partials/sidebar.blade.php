@@ -1,8 +1,8 @@
           <nav id="sidebar" class="col-md-2 d-md-block bg-dark sidebar h-100" aria-expanded="false">
             <div class="sidebar-sticky">
               <ul class="nav flex-column">
-                <li class="nav-item {{ Request::is('admin') ? 'active' : ''}} w-100">
-                  <a class="nav-link" href="/admin/">
+                <li class="nav-item {{ Request::is('dashboard') ? 'active' : ''}} w-100">
+                  <a class="nav-link" href="{{ route('app.dashboard') }}">
                     <span data-feather="home"></span>
                     <span class="nav-text"> Dashboard <span class="sr-only">(current)</span></span>
                   </a>
